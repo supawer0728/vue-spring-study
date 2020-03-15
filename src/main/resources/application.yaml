@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    initialization-mode: embedded
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  resources:
+    static-locations:
+      - classpath:/static
+  mvc:
+    static-path-pattern: /static/**
